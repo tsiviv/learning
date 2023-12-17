@@ -1,12 +1,11 @@
 
-
 const r= require("./routes/r")
 const express = require("express");
 const PORT=3000
+const app = express();
 app.use(express.json())
 
 app.use("/r",r)
-app.use(cookie())
 
 //app.use((req, res)=>{
     
