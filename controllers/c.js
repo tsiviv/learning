@@ -14,8 +14,7 @@ class generalOpinion {
     res.send("update"+ req.params)
   })
   deleteopinion = (async (req, res) => {
-    const { opinionid } = req.params
-    await generalOpinionDal.deleteopinion(opinionid)
+   
     res.send("delete")
   })
   
